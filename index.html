@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id-ID">
+	
+	<head>
+        <title>Minal Aidzin Wal Faidzin</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Selamat Hari Raya Idul Fitri 1439 H. Minal aidzin wal faidzin.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="@sonadztux">
+
+        <link rel="icon" href="img/ketupat.gif" type="image/gif">
+        
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:700' rel='stylesheet' type='text/css'>
+
+        <!-- ============ Title Text Animation ============  -->
+        <script type="text/javascript">
+        	function tb8_makeArray(n){
+        		this.length = n;
+        		return this.length;
+        	}
+
+        	tb8_messages = new
+        	tb8_makeArray(4);
+        	tb8_messages[0] = "Nanda Arfan Hakim mengucapkan..."
+        	tb8_messages[1] = "Selamat Hari Raya Idul Fitri 1439 H"
+        	tb8_messages[2] = "Minal Aidzin Wal Faidzin"
+        	tb8_messages[3] = "Mohon Maaf Lahir dan Batin"
+        	tb8_rptType = 'infinite'
+        	tb8_rptNbr = 5;
+        	tb8_speed = 100;
+        	tb8_delay = 500;
+
+        	var tb8_counter = 1;
+        	var tb8_currMsg = 0;
+        	var tb8_tekst = "";
+        	var tb8_i = 0;
+        	var tb8_TID = null;
+
+        	function tb8_pisi(){
+        		tb8_tekst = tb8_tekst + tb8_messages[tb8_currMsg].substring(tb8_i, tb8_i+1);
+        		document.title = tb8_tekst; tb8_sp=tb8_speed;
+        		tb8_i++
+        		if (tb8_i == tb8_messages[tb8_currMsg].length) { 
+        			tb8_currMsg++;
+        			tb8_i = 0;
+        			tb8_tekst = "";
+        			tb8_sp = tb8_delay;
+        		}
+        		if (tb8_currMsg == tb8_messages.length) {
+        			if ((tb8_rptType == 'finite') && (tb8_counter==tb8_rptNbr)) {
+        				clearTimeout(tb8_TID);
+        				return;
+        			}
+        			tb8_counter++;
+        			tb8_currMsg = 0;
+        		}
+        		tb8_TID = setTimeout("tb8_pisi()", tb8_sp);
+        	}
+        	tb8_pisi()
+        </script>
+        <!-- ============ End Title Text Animation ============  -->
+
+        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typewriter.js"></script>
+        <script src="js/animate.js"></script>
+
+	</head>
+<body>
+
+	<div class="container-fluid">
+	  <div class="row board-container">
+	    <div class="board">
+	    	<p id="terminal"></p>
+	    </div> 
+	  </div>
+	</div>
+
+	<!-- ============ JS Function Automate Typing in Terminal ============  -->
+	<!-- source code from: https://github.com/mehaase/js-typewriter -->
+	<script>
+		$(function () {
+		    var typewriter = new Typewriter($("#terminal"));
+		    typewriter.setCaret("_");
+		    typewriter.setCaretPeriod(500);
+		    typewriter.setDelay(150, 50);
+		    animate(typewriter);
+		});
+	</script>
+	<!-- ============ End Function ============  -->
+</body>
+</html>
