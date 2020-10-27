@@ -1,39 +1,44 @@
-html, body {
-  height:100%;
-  margin:0;
-  padding:0;
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
 }
 
 body {
-  background-image:url('../img/masjid-1.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: #464646;
-  font-family: 'Inconsolata'
+	background-image: url('../img/masjid-1.jpg');
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #464646;
+	font-family: 'Inconsolata';
+	display: flex;
+	justify-content: center;
+  align-items: center;
 }
 
-.container-fluid,.row {
-  height:100%;
-  }
-
-.board-container {
-  padding:200px;
-  box-sizing:border-box;
+.board {
+	background-color: #00000089;
+	color: #ffffff;
+	padding: 20px;
+  width: 60%;
+  margin: 1rem;
 }
 
-.board { 
-  background-color: #00000089;
-  color: #ffffff;
-  height:100%;
-  padding:20px;
+@media only screen and (max-width: 60em) { /* 60em = 960px (60 x 16px)*/
+	.board {
+		width: 98%;
+	}
+}
+#terminal {
+	white-space: pre-wrap;
 }
 
-#terminal { 
-  white-space: pre; 
-}
-
-#b { 
-  display: none; 
+#b {
+	display: none;
 }
