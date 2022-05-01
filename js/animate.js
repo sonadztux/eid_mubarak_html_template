@@ -35,7 +35,7 @@ function animate(typewriter) {
         {
             text: "maka ingatlah bahwa itu semua... MEMANGLAH SAYA SENGAJA\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\badalah benar-benar kekhilafan saya.\n",
             delayAfter: 350
-        }
+        },
         {
             text: "root@nanda:~# ",
             instant: true,
