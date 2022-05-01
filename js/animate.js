@@ -15,7 +15,7 @@ function animate(typewriter) {
             delayAfter: 350
         },
         {
-            text: "Selamat Hari Raya Idul Fitri 1439 Hijriah, saudaraku.\n",
+            text: "Selamat Hari Raya Idul Fitri 1443 Hijriah, saudaraku.\n",
             delayAfter: 350
         },
         {
