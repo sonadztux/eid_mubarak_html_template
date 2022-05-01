@@ -1,4 +1,4 @@
-# eid_mubarak_html_template
+# Eid Mubarak Static Web Template
 A simple web template (html + css + js ) script to congratulate someone. In this sample script is congratulate about Eid Mubarak in Bahasa (Indonesia).
 
 # Animated Demo
@@ -7,4 +7,4 @@ A simple web template (html + css + js ) script to congratulate someone. In this
 
 # Website Demo
 
-Website demo click here! **[DEMO](https://nanda.anakdesa.id/ketupat)**
+Website demo click here! **[DEMO](https://sonadztux.github.io/eid_mubarak_html_template/index.html)**
